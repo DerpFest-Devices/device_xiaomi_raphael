@@ -124,6 +124,8 @@ void vendor_load_properties() {
         mod_device = "raphaelin_in_global";
     }
 
+    property_override("ro.apex.updatable", "false");
+    
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
     set_ro_product_prop("model", model);
