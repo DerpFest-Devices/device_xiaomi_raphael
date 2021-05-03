@@ -617,4 +617,7 @@
 
     <!-- If face auth sends the user directly to home/last open app, or stays on keyguard -->
     <bool name="config_faceAuthDismissesKeyguard">false</bool>
+
+    <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
+    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
 </resources>
