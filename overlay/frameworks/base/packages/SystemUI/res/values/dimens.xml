@@ -32,4 +32,10 @@
 
     <!-- Margin on the right side of the system icon group on Keyguard. -->
     <dimen name="system_icons_keyguard_padding_end">@dimen/status_bar_padding_end</dimen>
+    
+    <!-- FOD recognizing animation vertical position offset -->
+    <dimen name="fod_animation_offset">1.0px</dimen>
+
+    <!-- Bottom margin size when fingerprint in display is active -->
+    <dimen name="keyguard_indication_margin_bottom_fingerprint_in_display">25dp</dimen>
 </resources>

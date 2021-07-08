@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The Evolution X Project
+# Copyright (C) 2021 The DerpFest Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,16 +16,18 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-EVO_BUILD_TYPE := OFFICIAL
-EXTRA_FOD_ANIMATIONS := true
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_raphael
+PRODUCT_NAME := derp_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+#Derp
+EXTRA_FOD_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+DERP_BUILDTYPE := Official

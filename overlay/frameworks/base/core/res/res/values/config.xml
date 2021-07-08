@@ -620,4 +620,26 @@
 
     <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
+    
+    <!-- Display mode remapping table.
+         If the mode names returned by the backend do not match
+         the predefined and translated strings in the Settings
+         app, they can be remapped here. The format is
+         "oldname:newname", one per entry. -->
+    <string-array name="config_displayModeMappings" translatable="false">
+        <item>38-default-OLED:standard</item>
+        <item>01-warm:reading</item>
+        <item>02-cool:dynamic</item>
+        <item>P3_CE:dci_p3</item>
+        <item>srgb_d65:srgb</item>
+    </string-array>
+
+    <!-- Should we filter any display modes which are unampped? -->
+    <bool name="config_filterDisplayModes">true</bool>
+
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">60</integer>
+
+    <!-- Component name of popup camera service -->
+    <string name="config_popUpCameraServiceComponentName" translatable="false">org.lineageos.settings/org.lineageos.settings.popupcamera.PopupCameraService</string>
 </resources>
