@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015-2016 The CyanogenMod Project
- *               2020 YAAP
+ *               2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ package org.lineageos.settings.display;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-public class DisplaySettingsActivity extends PreferenceActivity {
+public class DcDimmingSettingsActivity extends PreferenceActivity {
 
     private static final String TAG_DCDIMMING = "dcdimming";
 
@@ -28,6 +28,6 @@ public class DisplaySettingsActivity extends PreferenceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getFragmentManager().beginTransaction().replace(android.R.id.content,
-                new DisplaySettingsFragment(), TAG_DCDIMMING).commit();
+                new DcDimmingSettingsFragment(), TAG_DCDIMMING).commit();
     }
 }
