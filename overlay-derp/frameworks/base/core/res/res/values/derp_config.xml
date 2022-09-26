@@ -61,5 +61,7 @@
 
      <!-- Whether to show Refresh Rate Tile or Not (Only For High Refresh Rate Devices) -->
      <bool name="config_showRefreshRateTile">false</bool>
-
+     
+     <!-- Default state for LiveDisplay -->
+     <bool name="config_defaultCABC">true</bool>
 </resources>
