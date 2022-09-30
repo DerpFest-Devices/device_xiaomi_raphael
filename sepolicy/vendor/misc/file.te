@@ -7,3 +7,6 @@ type sysfs_kgsl_proc, sysfs_type, fs_type;
 
 # System Info Node
 type sysfs_kgsl, sysfs_type, fs_type;
+
+# Livedisplay
+type vendor_sysfs_hbm, sysfs_type, fs_type;
